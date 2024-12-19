@@ -16,10 +16,12 @@ const TabsNavigator = () => {
         <Tab.Navigator
             initialRouteName="Home"
             screenOptions={{
-                tabBarActiveTintColor: '#ff9800', // Color del ícono cuando está activo
-                tabBarInactiveTintColor: 'gray',  // Color del ícono cuando está inactivo
-                headerShown: false,               // No mostrar header en todas las pantallas
-                // tabBarShowLabel: false,           // No mostrar el texto debajo del ícono
+                tabBarActiveTintColor: '#f1f1f1', // Color del ícono cuando está activo
+                tabBarInactiveTintColor: '#999999',  // Color del ícono cuando está inactivo
+                headerShown: false,              // No mostrar header en todas las pantallas
+                tabBarStyle: {
+                    backgroundColor: '#1b1b1b',      // Cambia el color de fondo de la tab bar
+                },
             }}
         >
             <Tab.Screen
@@ -70,5 +72,6 @@ const TabsNavigator = () => {
         </Tab.Navigator>
     );
 };
+  
 
 export default TabsNavigator;

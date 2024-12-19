@@ -15,7 +15,7 @@ const height_footer = screen_width / 4;
 
 const Publicacion = () => {
     return (
-        <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <View style={styles.scrollContainer}>
             {Array.from({ length: 10 }).map((_, index) => {
                 // Generar un aspect ratio aleatorio para cada View
                 const aspect_ratio = getRandomAspectRatio();
@@ -44,7 +44,7 @@ const Publicacion = () => {
                     </View>
                 );
             })}
-        </ScrollView>
+        </View>
     );
 };
 
@@ -52,26 +52,24 @@ export default Publicacion;
 
 const styles = StyleSheet.create({
     scrollContainer: {
-        flexGrow: 1, // Esto asegura que el contenido puede expandirse para permitir el scroll
-        justifyContent: 'flex-start', // Puedes ajustar el contenido a tu preferencia
+        // flexGrow: 1, // Esto asegura que el contenido puede expandirse para permitir el scroll
+        // justifyContent: 'flex-start', // Puedes ajustar el contenido a tu preferencia
+        // backgroundColor: '#1b1b1b'
     },
     mainContainer: {
         marginBottom: 10,  // Ajuste para un espaciado adecuado
-        borderBottomColor: '000',
-        borderBottomWidth: 3,
-        
     },
     container: {
-        backgroundColor: 'red',
+        backgroundColor: '#060606',
         width: screen_width,
     },
     header: {
-        backgroundColor: 'blue',
+        backgroundColor: '#2b2b2b',
         width: screen_width,
         height: height_header,
     },
     footer: {
-        backgroundColor: 'green',
+        backgroundColor: '#2b2b2b',
         width: screen_width,
         height: height_footer,
     }
