@@ -14,7 +14,7 @@ const Tab = createBottomTabNavigator();
 const TabsNavigator = () => {
     return (
         <Tab.Navigator
-            initialRouteName="Home"
+            initialRouteName="Profile"
             screenOptions={{
                 tabBarActiveTintColor: '#f1f1f1', // Color del ícono cuando está activo
                 tabBarInactiveTintColor: '#999999',  // Color del ícono cuando está inactivo

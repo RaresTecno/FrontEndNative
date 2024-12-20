@@ -6,7 +6,7 @@ const historias = Array.from({ length: 50 }, (_, index) => `ceipmiguelhernandezf
 
 //Cortar el nombre y poner ... a los 14 caracteres
 let isZoomed = false;
-
+console.log(isZoomed)
 const HomeScreen = () => {
     return (
         <ScrollView
