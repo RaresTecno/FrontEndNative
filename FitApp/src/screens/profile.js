@@ -14,9 +14,9 @@ const HomeScreen = () => {
             </View>
             <View style={styles.profileNumbers}>
 
-              <Text style={styles.profileF}>Follows</Text>
-              <Text style={styles.profileF}>Followers</Text>
-              <Text style={styles.profileF}>Entrenos</Text>
+              <View style={styles.profileF}><Text style={styles.profileF_Text}>Follows </Text><Text style={styles.profileF_Text}>100</Text></View>
+              <View style={styles.profileF}><Text style={styles.profileF_Text}>Followers </Text><Text style={styles.profileF_Text}>100</Text></View>
+              <View style={styles.profileF}><Text style={styles.profileF_Text}>Entrenos </Text><Text style={styles.profileF_Text}>100</Text></View>
 
             </View>
             <View style={styles.profileNumbers}>
@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
   top_1: {
     flexDirection: 'row',
     margin: 10,
+    alignItems: 'center'
   },
   profileImg: {
     height: 100,
@@ -92,8 +93,11 @@ const styles = StyleSheet.create({
 
   },
   profileF: {
-    textAlign: 'center',
-    marginHorizontal: 10
+    justifyContent: 'center',
+    margin: 10
+  },
+    profileF_Text:{ 
+      textAlign: 'center'
   },
   descripcion: {
     marginHorizontal: 30,
